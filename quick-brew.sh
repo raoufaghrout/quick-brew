@@ -3,10 +3,10 @@
 
 brew update;
 
-brew upgrade;
+brew upgrade --cleanup;
 
 brew man;
 
 brew prune;
 
-brew cleanup;
+brew cleanup --force -s;

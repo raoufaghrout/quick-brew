@@ -7,4 +7,4 @@ brew man;
 
 brew prune;
 
-brew cleanup;
+brew cleanup --force -s;

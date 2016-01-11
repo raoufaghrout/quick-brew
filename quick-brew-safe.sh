@@ -3,6 +3,8 @@
 
 brew update;
 
+brew man;
+
 brew prune;
 
 brew cleanup;

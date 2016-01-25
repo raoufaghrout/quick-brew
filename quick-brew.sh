@@ -5,7 +5,17 @@ sudo chown -R $(whoami):admin /usr/local
 
 brew update;
 
-brew upgrade --cleanup;
+while getopts ":u" opt; do
+  case $opt in
+    u)
+      echo "Upgrading recipes" >&2
+      brew upgrade --cleanup;
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      ;;
+  esac
+done
 
 brew man;
 

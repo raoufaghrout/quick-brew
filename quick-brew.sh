@@ -1,8 +1,6 @@
 
 #!/bin/sh
 
-sudo chown -R $(whoami):admin /usr/local
-
 brew update;
 
 while getopts ":u" opt; do

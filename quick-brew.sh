@@ -19,6 +19,4 @@ brew man;
 
 brew prune;
 
-brew cleanup --force -s;
-
-brew cask cleanup;
+brew cleanup -s;

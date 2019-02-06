@@ -7,7 +7,7 @@ while getopts ":u" opt; do
   case $opt in
     u)
       echo "Upgrading recipes" >&2
-      brew upgrade --cleanup;
+      brew upgrade;
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -16,7 +16,5 @@ while getopts ":u" opt; do
 done
 
 brew man;
-
-brew prune;
 
 brew cleanup -s;

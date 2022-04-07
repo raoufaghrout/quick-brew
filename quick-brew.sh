@@ -15,6 +15,4 @@ while getopts ":u" opt; do
   esac
 done
 
-brew man;
-
 brew cleanup -s;
